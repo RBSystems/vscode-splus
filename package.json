@@ -1,0 +1,26 @@
+{
+    "name": "crestronsimplplus",
+    "displayName": "Crestron S+",
+    "description": "An extension for Crestron's S+ language",
+    "version": "0.0.1",
+    "publisher": "statuscontrols",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "simplplus",
+            "aliases": ["Simpl+", "simplplus"],
+            "extensions": [".usp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "simplplus",
+            "scopeName": "source.usp",
+            "path": "./syntaxes/simplplus.tmLanguage.json"
+        }]
+    }
+}
